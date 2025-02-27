@@ -1,4 +1,4 @@
-package com.example.Employee_Pay_Roll.entity;
+package com.example.Employee_Pay_Roll.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;

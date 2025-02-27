@@ -1,4 +1,4 @@
-package com.example.Employee_Pay_Roll;
+package com.example.Employee_Pay_Roll.validator;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.MethodArgumentNotValidException;

@@ -1,6 +1,6 @@
 package com.example.Employee_Pay_Roll.controller;
 
-import com.example.Employee_Pay_Roll.entity.Employee;
+import com.example.Employee_Pay_Roll.model.Employee;
 import com.example.Employee_Pay_Roll.service.EmployeeService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
