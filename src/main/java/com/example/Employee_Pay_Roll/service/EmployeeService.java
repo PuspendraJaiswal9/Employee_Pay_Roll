@@ -16,7 +16,7 @@ public class EmployeeService {
     public EmployeeService(EmployeeRepository employeeRepository) {
         this.employeeRepository = employeeRepository;
     }
-    // get all employee
+
     public List<Employee> getAllEmployees() {
         return employeeRepository.findAll();
     }
@@ -34,6 +34,11 @@ public class EmployeeService {
                 .orElseThrow(() -> new RuntimeException("Employee not found"));
         existingEmployee.setName(employee.getName());
         existingEmployee.setSalary(employee.getSalary());
+        existingEmployee.setGender(employee.getGender());
+        existingEmployee.setStartDate(employee.getStartDate());
+        existingEmployee.setNote(employee.getNote());
+        existingEmployee.setProfilePic(employee.getProfilePic());
+        existingEmployee.setDepartment(employee.getDepartment());
         return employeeRepository.save(existingEmployee);
     }
 
