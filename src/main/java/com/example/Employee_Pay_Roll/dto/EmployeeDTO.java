@@ -14,7 +14,7 @@ import java.util.Date;
 @AllArgsConstructor
 public class EmployeeDTO {
     private Long id;
-
+    //Validation
     @NotBlank(message = "Name should not be empty")
     @Size(min = 2, message = "Name must be at least 2 characters long")
     private String name;
